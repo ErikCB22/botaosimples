@@ -1,0 +1,55 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(imagens/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@keyframes anim-botao {
+      0% {
+        background-color: #52afbb;
+      }
+      50% {
+        background-color: #448e9e;
+      }
+      100% {
+        background-color: #356d81;
+      }
+}
+
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.botao a {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    width: 220px;
+    height: 75px;
+    color: #fff;
+    font-family: sans-serif;
+    transition: all 0.3s ease-in-out;
+    animation: anim-botao 4s infinite;
+
+}
+
+.botao a:hover {
+    transform: scale(1.1);
+    box-shadow:  4px 4px 5px #222222;
+}
